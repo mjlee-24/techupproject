@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPF Growth Optimizer</title>
+    <!-- Tailwind CDN for styling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-4xl mx-auto p-4 space-y-6">
+        <!-- Header Section -->
+        <div class="text-center space-y-2">
+            <h1 class="text-3xl font-bold">CPF Growth Optimizer</h1>
+            <p class="text-gray-600">Simple steps to maximize your CPF savings</p>
+        </div>
+
+        <!-- Progress Tracker -->
+        <div class="bg-white rounded-lg shadow p-6 mb-6">
+            <div class="space-y-2">
+                <div class="flex justify-between text-sm mb-2">
+                    <span>Your Progress</span>
+                    <span id="progress-text">1/4 Steps</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div id="progress-bar" class="progress-bar bg-blue-500 rounded-full h-2" style="width: 25%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Dashboard Grid -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Quick Actions Panel -->
+            <div class="card bg-white rounded-lg shadow">
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="shield" class="text-blue-500"></i>
+                        <h2 class="text-xl font-bold">Today's Quick Win</h2>
+                    </div>
+                    <div class="p-4 bg-blue-50 rounded-lg">
+                        <h3 class="font-semibold mb-2">Transfer $X to Special Account</h3>
+                        <p class="text-sm text-gray-600 mb-4">
+                            This simple action will earn you 4% interest instead of 2.5%
+                        </p>
+                        <button class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 flex items-center justify-center">
+                            Show Me How 
+                            <i data-lucide="chevron-right" class="ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Growth Calculator -->
+            <div class="card bg-white rounded-lg shadow">
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="calculator" class="text-green-500"></i>
+                        <h2 class="text-xl font-bold">Your Growth Potential</h2>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span>Current Monthly Savings</span>
+                            <span class="font-semibold">$1,200</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Potential Monthly Savings</span>
+                            <span class="font-semibold text-green-600">$1,500</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-500 rounded-full h-2" style="width: 80%"></div>
+                        </div>
+                        <p class="text-sm text-gray-600">
+                            You're 80% towards optimal CPF growth
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Steps -->
+            <div class="card bg-white rounded-lg shadow md:col-span-2">
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="trending-up" class="text-purple-500"></i>
+                        <h2 class="text-xl font-bold">Your Next Steps</h2>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+                            <i data-lucide="check-circle" class="text-green-500 mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold">Review Your CPF Allocation</h3>
+                                <p class="text-sm text-gray-600">5 minutes • Low effort • High impact</p>
+                            </div>
+                            <button class="ml-auto px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
+                                Start
+                            </button>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+                            <i data-lucide="alert-circle" class="text-amber-500 mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold">Optimize Special Account</h3>
+                                <p class="text-sm text-gray-600">10 minutes • Medium effort • High impact</p>
+                            </div>
+                            <button class="ml-auto px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
