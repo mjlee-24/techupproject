@@ -11,6 +11,7 @@
     <!-- Custom CSS -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body class="bg-gray-50">
     <div class="max-w-4xl mx-auto p-4 space-y-6">
@@ -21,14 +22,152 @@
         </div>
 
         <!-- Progress Tracker -->
-        <div class="bg-white rounded-lg shadow p-6 mb-6">
-            <div class="space-y-2">
-                <div class="flex justify-between text-sm mb-2">
-                    <span>Your Progress</span>
-                    <span id="progress-text">1/4 Steps</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                    <div id="progress-bar" class="progress-bar bg-blue-500 rounded-full h-2" style="width: 25%"></div>
+        <div class="progress-wrapper">
+            <div class="progress-header">
+                <h3 class="progress-title">Your Progress</h3>
+                <span class="progress-steps">Step <span id="currentStep">1</span> of 4</span>
+            </div>
+            
+            <div class="progress-container">
+                <div id="progressBar" class="progress-bar" style="width: 25%"></div>
+            </div>
+            
+            <div class="progress-indicators">
+                <div class="step-indicator active" data-step="1">1</div>
+                <div class="step-indicator" data-step="2">2</div>
+                <div class="step-indicator" data-step="3">3</div>
+                <div class="step-indicator" data-step="4">4</div>
+            </div>
+            
+            <div class="step-labels">
+                <span class="step-label">Setup</span>
+                <span class="step-label">CPF Details</span>
+                <span class="step-label">Goals</span>
+                <span class="step-label">Review</span>
+            </div>
+        </div>
+
+        <!-- Profile Setup -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Profile Information Card -->
+            <div class="card bg-white rounded-lg shadow md:col-span-2">
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="user" class="text-blue-500"></i>
+                        <h2 class="text-xl font-bold">Your Profile</h2>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-lg">
+                        <form class="space-y-6">
+                            <!-- Nickname Field -->
+                            <div class="form-group">
+                                <label for="nickname" class="block text-sm font-semibold mb-2 text-gray-700">
+                                    What should we call you?
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="nickname" 
+                                    name="nickname" 
+                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                    placeholder="Enter your nickname"
+                                    required
+                                >
+                            </div>
+        
+                            <!-- Age Range Dropdown -->
+                            <div class="form-group">
+                                <label for="age" class="block text-sm font-semibold mb-2 text-gray-700">
+                                    Age Range
+                                </label>
+                                <select 
+                                    id="age" 
+                                    name="age" 
+                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                    required
+                                >
+                                    <option value="">Select age range</option>
+                                    <option value="18-25">18-25 years</option>
+                                    <option value="26-35">26-35 years</option>
+                                    <option value="36-45">36-45 years</option>
+                                    <option value="46-55">46-55 years</option>
+                                    <option value="56-65">56-65 years</option>
+                                    <option value="65+">Above 65 years</option>
+                                </select>
+                            </div>
+        
+                            <!-- Saving Goals Dropdown -->
+                            <div class="form-group">
+                                <label for="savings" class="block text-sm font-semibold mb-2 text-gray-700">
+                                    Monthly Saving Goals
+                                </label>
+                                <select 
+                                    id="savings" 
+                                    name="savings" 
+                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                    required
+                                >
+                                    <option value="">Select target savings</option>
+                                    <option value="0-500">$0 - $500</option>
+                                    <option value="501-1000">$501 - $1,000</option>
+                                    <option value="1001-2000">$1,001 - $2,000</option>
+                                    <option value="2001-3000">$2,001 - $3,000</option>
+                                    <option value="3001-5000">$3,001 - $5,000</option>
+                                    <option value="5000+">Above $5,000</option>
+                                </select>
+                            </div>
+        
+                            <!-- Estimated Income Dropdown -->
+                            <div class="form-group">
+                                <label for="income" class="block text-sm font-semibold mb-2 text-gray-700">
+                                    Monthly Income Range
+                                </label>
+                                <select 
+                                    id="income" 
+                                    name="income" 
+                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                    required
+                                >
+                                    <option value="">Select income range</option>
+                                    <option value="0-3000">Below $3,000</option>
+                                    <option value="3001-5000">$3,001 - $5,000</option>
+                                    <option value="5001-7000">$5,001 - $7,000</option>
+                                    <option value="7001-10000">$7,001 - $10,000</option>
+                                    <option value="10001-15000">$10,001 - $15,000</option>
+                                    <option value="15000+">Above $15,000</option>
+                                </select>
+                            </div>
+        
+                            <!-- Liquidity Preference Dropdown -->
+                            <div class="form-group">
+                                <label for="liquidity" class="block text-sm font-semibold mb-2 text-gray-700">
+                                    Preferred Liquidity Level
+                                </label>
+                                <select 
+                                    id="liquidity" 
+                                    name="liquidity" 
+                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                    required
+                                >
+                                    <option value="">Select liquidity preference</option>
+                                    <option value="very-low">Very Low (0-20%)</option>
+                                    <option value="low">Low (21-40%)</option>
+                                    <option value="medium">Medium (41-60%)</option>
+                                    <option value="high">High (61-80%)</option>
+                                    <option value="very-high">Very High (81-100%)</option>
+                                </select>
+                            </div>
+        
+                            <!-- Submit Button -->
+                            <div class="form-group">
+                                <button 
+                                    type="submit" 
+                                    class="w-full bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all duration-200 flex items-center justify-center gap-2"
+                                >
+                                    Save Profile
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,7 +186,7 @@
                         <p class="text-sm text-gray-600 mb-4">
                             This simple action will earn you 4% interest instead of 2.5%
                         </p>
-                        <button class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 flex items-center justify-center">
+                        <button onclick="window.location.href='https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement?utm_source=glepax&utm_medium=1200x628&utm_campaign=rtmplng&utm_term=&utm_content=i12&https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement%3Futm_source%3Dglepax%26utm_medium%3D1200x628%26utm_campaign%3Drtmplng%26utm_term%3D%26utm_content%3Di12%26gad_source%3D1&gclid=Cj0KCQjwvpy5BhDTARIsAHSilylsc21boDaKSiW0-3Z8lan7RzUq1XqBJxyUyCxNoTw84v0nEl9JZ3oaAr02EALw_wcB'" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 flex items-center justify-center">
                             Show Me How 
                             <i data-lucide="chevron-right" class="ml-2"></i>
                         </button>
@@ -117,6 +256,6 @@
     </div>
 
     <!-- Custom JavaScript -->
-    <script src="script.js"></script>
+    
 </body>
 </html>

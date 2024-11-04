@@ -93,3 +93,99 @@ document.addEventListener('DOMContentLoaded', function() {
         saveProgress();
     }
 });
+
+// Add this to your existing JavaScript file
+
+class ProgressTracker {
+    constructor() {
+        this.currentStep = 1;
+        this.totalSteps = 4;
+        this.progressBar = document.getElementById('progressBar');
+        this.currentStepElement = document.getElementById('currentStep');
+        this.stepIndicators = document.querySelectorAll('.step-indicator');
+        
+        // Initialize the progress bar
+        this.updateProgress(this.currentStep);
+        
+        // Add click handlers to step indicators (optional)
+        this.stepIndicators.forEach(indicator => {
+            indicator.addEventListener('click', () => {
+                const step = parseInt(indicator.dataset.step);
+                if (step <= this.currentStep + 1) {
+                    this.updateProgress(step);
+                }
+            });
+        });
+    }
+    
+    updateProgress(step) {
+        // Update current step
+        this.currentStep = step;
+        
+        // Update progress bar width
+        const progressPercentage = ((step - 1) / (this.totalSteps - 1)) * 100;
+        this.progressBar.style.width = `${progressPercentage}%`;
+        
+        // Update step number display
+        this.currentStepElement.textContent = step;
+        
+        // Update step indicators
+        this.stepIndicators.forEach(indicator => {
+            const indicatorStep = parseInt(indicator.dataset.step);
+            indicator.classList.remove('active', 'completed');
+            
+            if (indicatorStep < step) {
+                indicator.classList.add('completed');
+            } else if (indicatorStep === step) {
+                indicator.classList.add('active');
+            }
+        });
+        
+        // Save progress in localStorage (optional)
+        localStorage.setItem('currentStep', step);
+    }
+    
+    // Method to be called when a step is completed
+    nextStep() {
+        if (this.currentStep < this.totalSteps) {
+            this.updateProgress(this.currentStep + 1);
+            return true;
+        }
+        return false;
+    }
+    
+    // Method to go back a step
+    previousStep() {
+        if (this.currentStep > 1) {
+            this.updateProgress(this.currentStep - 1);
+            return true;
+        }
+        return false;
+    }
+    
+    // Method to check if all steps are completed
+    isComplete() {
+        return this.currentStep === this.totalSteps;
+    }
+}
+
+// Initialize the progress tracker
+const progressTracker = new ProgressTracker();
+
+// Example usage in your existing button click handlers:
+document.querySelectorAll('button').forEach(button => {
+    button.addEventListener('click', function() {
+        // Check if this button should trigger progress update
+        if (this.dataset.progressStep === 'next') {
+            progressTracker.nextStep();
+        }
+    });
+});
+
+// Optional: Load saved progress on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const savedStep = localStorage.getItem('currentStep');
+    if (savedStep) {
+        progressTracker.updateProgress(parseInt(savedStep));
+    }
+});
