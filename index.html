@@ -3,259 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPF Growth Optimizer</title>
-    <!-- Tailwind CDN for styling -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
-    <!-- Lucide Icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
-    <!-- Custom CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <title>CPF Optimiser</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
-<body class="bg-gray-50">
-    <div class="max-w-4xl mx-auto p-4 space-y-6">
+<body>
+    <div class="container">
         <!-- Header Section -->
-        <div class="text-center space-y-2">
-            <h1 class="text-3xl font-bold">CPF Growth Optimizer</h1>
-            <p class="text-gray-600">Simple steps to maximize your CPF savings</p>
-        </div>
+        <header>
+            <h1>CPF Optimiser</h1>
+            <p class="subtitle">Your path to financial growth, simplified.</p>
+        </header>
 
-        <!-- Progress Tracker -->
-        <div class="progress-wrapper">
-            <div class="progress-header">
-                <h3 class="progress-title">Your Progress</h3>
-                <span class="progress-steps">Step <span id="currentStep">1</span> of 4</span>
-            </div>
-            
-            <div class="progress-container">
-                <div id="progressBar" class="progress-bar" style="width: 25%"></div>
-            </div>
-            
-            <div class="progress-indicators">
-                <div class="step-indicator active" data-step="1">1</div>
-                <div class="step-indicator" data-step="2">2</div>
-                <div class="step-indicator" data-step="3">3</div>
-                <div class="step-indicator" data-step="4">4</div>
-            </div>
-            
-            <div class="step-labels">
-                <span class="step-label">Setup</span>
-                <span class="step-label">CPF Details</span>
-                <span class="step-label">Goals</span>
-                <span class="step-label">Review</span>
-            </div>
-        </div>
+        <!-- Section 1: Profile -->
+        <section id="profile-section" class="card">
+            <h2>Your Profile</h2>
+            <form id="profile-form">
+                <div class="form-group">
+                    <label for="nickname">Nickname</label>
+                    <input type="text" id="nickname" required>
+                </div>
 
-        <!-- Profile Setup -->
-        <div class="grid md:grid-cols-2 gap-6">
-            <!-- Profile Information Card -->
-            <div class="card bg-white rounded-lg shadow md:col-span-2">
-                <div class="p-6">
-                    <div class="flex items-center gap-2 mb-4">
-                        <i data-lucide="user" class="text-blue-500"></i>
-                        <h2 class="text-xl font-bold">Your Profile</h2>
-                    </div>
-                    <div class="p-6 bg-blue-50 rounded-lg">
-                        <form class="space-y-6">
-                            <!-- Nickname Field -->
-                            <div class="form-group">
-                                <label for="nickname" class="block text-sm font-semibold mb-2 text-gray-700">
-                                    What should we call you?
-                                </label>
-                                <input 
-                                    type="text" 
-                                    id="nickname" 
-                                    name="nickname" 
-                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-                                    placeholder="Enter your nickname"
-                                    required
-                                >
-                            </div>
-        
-                            <!-- Age Range Dropdown -->
-                            <div class="form-group">
-                                <label for="age" class="block text-sm font-semibold mb-2 text-gray-700">
-                                    Age Range
-                                </label>
-                                <select 
-                                    id="age" 
-                                    name="age" 
-                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-                                    required
-                                >
-                                    <option value="">Select age range</option>
-                                    <option value="18-25">18-25 years</option>
-                                    <option value="26-35">26-35 years</option>
-                                    <option value="36-45">36-45 years</option>
-                                    <option value="46-55">46-55 years</option>
-                                    <option value="56-65">56-65 years</option>
-                                    <option value="65+">Above 65 years</option>
-                                </select>
-                            </div>
-        
-                            <!-- Saving Goals Dropdown -->
-                            <div class="form-group">
-                                <label for="savings" class="block text-sm font-semibold mb-2 text-gray-700">
-                                    Monthly Saving Goals
-                                </label>
-                                <select 
-                                    id="savings" 
-                                    name="savings" 
-                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-                                    required
-                                >
-                                    <option value="">Select target savings</option>
-                                    <option value="0-500">$0 - $500</option>
-                                    <option value="501-1000">$501 - $1,000</option>
-                                    <option value="1001-2000">$1,001 - $2,000</option>
-                                    <option value="2001-3000">$2,001 - $3,000</option>
-                                    <option value="3001-5000">$3,001 - $5,000</option>
-                                    <option value="5000+">Above $5,000</option>
-                                </select>
-                            </div>
-        
-                            <!-- Estimated Income Dropdown -->
-                            <div class="form-group">
-                                <label for="income" class="block text-sm font-semibold mb-2 text-gray-700">
-                                    Monthly Income Range
-                                </label>
-                                <select 
-                                    id="income" 
-                                    name="income" 
-                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-                                    required
-                                >
-                                    <option value="">Select income range</option>
-                                    <option value="0-3000">Below $3,000</option>
-                                    <option value="3001-5000">$3,001 - $5,000</option>
-                                    <option value="5001-7000">$5,001 - $7,000</option>
-                                    <option value="7001-10000">$7,001 - $10,000</option>
-                                    <option value="10001-15000">$10,001 - $15,000</option>
-                                    <option value="15000+">Above $15,000</option>
-                                </select>
-                            </div>
-        
-                            <!-- Liquidity Preference Dropdown -->
-                            <div class="form-group">
-                                <label for="liquidity" class="block text-sm font-semibold mb-2 text-gray-700">
-                                    Preferred Liquidity Level
-                                </label>
-                                <select 
-                                    id="liquidity" 
-                                    name="liquidity" 
-                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-                                    required
-                                >
-                                    <option value="">Select liquidity preference</option>
-                                    <option value="very-low">Very Low (0-20%)</option>
-                                    <option value="low">Low (21-40%)</option>
-                                    <option value="medium">Medium (41-60%)</option>
-                                    <option value="high">High (61-80%)</option>
-                                    <option value="very-high">Very High (81-100%)</option>
-                                </select>
-                            </div>
-        
-                            <!-- Submit Button -->
-                            <div class="form-group">
-                                <button 
-                                    type="submit" 
-                                    class="w-full bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all duration-200 flex items-center justify-center gap-2"
-                                >
-                                    Save Profile
-                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                <div class="form-group">
+                    <label for="age">Age Range</label>
+                    <select id="age" required>
+                        <option value="">Select your age range</option>
+                        <option value="20-25">20-25</option>
+                        <option value="26-30">26-30</option>
+                        <option value="31-35">31-35</option>
+                        <option value="36-40">36-40</option>
+                        <option value="41-45">41-45</option>
+                        <option value="46-50">46-50</option>
+                        <option value="51-55">51-55</option>
+                        <option value="56-60">56-60</option>
+                        <option value="60+">Above 60</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="goals">Saving Goals (Multiple Selection)</label>
+                    <select id="goals" multiple required>
+                        <option value="home">Home Ownership</option>
+                        <option value="education">Children's Education</option>
+                        <option value="retirement">Retirement</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="income">Monthly Income</label>
+                    <select id="income" required>
+                        <option value="">Select income range</option>
+                        <option value="below-2000">Below $2,000</option>
+                        <option value="2000-3500">$2,000 - $3,500</option>
+                        <option value="3501-5000">$3,501 - $5,000</option>
+                        <option value="5001-7500">$5,001 - $7,500</option>
+                        <option value="7501-10000">$7,501 - $10,000</option>
+                        <option value="above-10000">Above $10,000</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="liquidity">Liquidity Preference</label>
+                    <select id="liquidity" required>
+                        <option value="">Select liquidity preference</option>
+                        <option value="very-low">Very Low (0-20%)</option>
+                        <option value="low">Low (21-40%)</option>
+                        <option value="moderate">Moderate (41-60%)</option>
+                        <option value="high">High (61-80%)</option>
+                        <option value="very-high">Very High (81-100%)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Get Personalised Recommendations</button>
+            </form>
+        </section>
+
+        <!-- Section 2: Quick Wins (Hidden initially) -->
+        <section id="quick-wins" class="card hidden">
+            <h2>Your Quick Win</h2>
+            <div class="recommendation-card">
+                <h3 id="quick-win-title"></h3>
+                <p id="quick-win-benefit" class="benefit-text"></p>
+                <div class="action-container">
+                    <a id="quick-win-link" href="#" target="_blank" class="action-btn">Take Action Now</a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Main Dashboard Grid -->
-        <div class="grid md:grid-cols-2 gap-6">
-            <!-- Quick Actions Panel -->
-            <div class="card bg-white rounded-lg shadow">
-                <div class="p-6">
-                    <div class="flex items-center gap-2 mb-4">
-                        <i data-lucide="shield" class="text-blue-500"></i>
-                        <h2 class="text-xl font-bold">Today's Quick Win</h2>
-                    </div>
-                    <div class="p-4 bg-blue-50 rounded-lg">
-                        <h3 class="font-semibold mb-2">Transfer $X to Special Account</h3>
-                        <p class="text-sm text-gray-600 mb-4">
-                            This simple action will earn you 4% interest instead of 2.5%
-                        </p>
-                        <button onclick="window.location.href='https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement?utm_source=glepax&utm_medium=1200x628&utm_campaign=rtmplng&utm_term=&utm_content=i12&https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement%3Futm_source%3Dglepax%26utm_medium%3D1200x628%26utm_campaign%3Drtmplng%26utm_term%3D%26utm_content%3Di12%26gad_source%3D1&gclid=Cj0KCQjwvpy5BhDTARIsAHSilylsc21boDaKSiW0-3Z8lan7RzUq1XqBJxyUyCxNoTw84v0nEl9JZ3oaAr02EALw_wcB'" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 flex items-center justify-center">
-                            Show Me How 
-                            <i data-lucide="chevron-right" class="ml-2"></i>
-                        </button>
-                    </div>
-                </div>
+        <!-- Section 3: Maximise CPF Further (Hidden initially) -->
+        <section id="maximize-cpf" class="card hidden">
+            <h2>Maximise CPF Further!</h2>
+            <div id="additional-recommendations">
+                <!-- Recommendation cards will be inserted here by JavaScript -->
             </div>
-
-            <!-- Growth Calculator -->
-            <div class="card bg-white rounded-lg shadow">
-                <div class="p-6">
-                    <div class="flex items-center gap-2 mb-4">
-                        <i data-lucide="calculator" class="text-green-500"></i>
-                        <h2 class="text-xl font-bold">Your Growth Potential</h2>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center">
-                            <span>Current Monthly Savings</span>
-                            <span class="font-semibold">$1,200</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span>Potential Monthly Savings</span>
-                            <span class="font-semibold text-green-600">$1,500</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2">
-                            <div class="bg-green-500 rounded-full h-2" style="width: 80%"></div>
-                        </div>
-                        <p class="text-sm text-gray-600">
-                            You're 80% towards optimal CPF growth
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Action Steps -->
-            <div class="card bg-white rounded-lg shadow md:col-span-2">
-                <div class="p-6">
-                    <div class="flex items-center gap-2 mb-4">
-                        <i data-lucide="trending-up" class="text-purple-500"></i>
-                        <h2 class="text-xl font-bold">Your Next Steps</h2>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
-                            <i data-lucide="check-circle" class="text-green-500 mt-1"></i>
-                            <div>
-                                <h3 class="font-semibold">Review Your CPF Allocation</h3>
-                                <p class="text-sm text-gray-600">5 minutes • Low effort • High impact</p>
-                            </div>
-                            <button class="ml-auto px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
-                                Start
-                            </button>
-                        </div>
-
-                        <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
-                            <i data-lucide="alert-circle" class="text-amber-500 mt-1"></i>
-                            <div>
-                                <h3 class="font-semibold">Optimize Special Account</h3>
-                                <p class="text-sm text-gray-600">10 minutes • Medium effort • High impact</p>
-                            </div>
-                            <button class="ml-auto px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
-                                Learn More
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
-
-    <!-- Custom JavaScript -->
-    
+    <script src="script.js"></script>
 </body>
 </html>
