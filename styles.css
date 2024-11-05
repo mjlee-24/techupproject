@@ -8,11 +8,20 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
+.dynapuff-funfont {
+    font-family: "DynaPuff", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'DynaPuff', serif;
 }
 
 body {
