@@ -5,7 +5,7 @@ const recommendations = {
         home: {
             quickWin: {
                 title: "Make Voluntary Contributions to your Ordinary Account",
-                benefit: "Enjoy tax relief for up to $16,000 per year – up to $8,000 each when you make cash top-ups for (i) yourself and (ii) your loved ones!",
+                benefit: "Increase your home loan eligibility by up to 4x your contribution!",
                 link: "https://www.cpf.gov.sg/member/account-services/make-voluntary-contributions"
             },
             additional: [
@@ -13,7 +13,7 @@ const recommendations = {
                     title: "Set up GIRO for Monthly Top-ups",
                     benefit: "Automate your savings with just one form submission!",
                     time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-cash-top-ups-for-retirement"
+                    link: "https://www.cpf.gov.sg/member/account-services/giro-arrangements"
                 },
                 {
                     title: "Join the CPF LIFE Scheme Early",
@@ -40,24 +40,224 @@ const recommendations = {
                     title: "Set up Monthly SA Top-up",
                     benefit: "Earn 4% interest with minimal effort!",
                     time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/manage-recurring-cash-top-ups-for-retirement"
+                    link: "https://www.cpf.gov.sg/member/account-services/giro-arrangements"
                 },
                 {
                     title: "Make Retirement Sum Topping-Up",
                     benefit: "Get tax relief while building retirement funds!",
                     time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement?utm_source=glepax&utm_medium=1200x628&utm_campaign=rtmplng&utm_term=&utm_content=i12&https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement%3Futm_source%3Dglepax%26utm_medium%3D1200x628%26utm_campaign%3Drtmplng%26utm_term%3D%26utm_content%3Di12%26gad_source%3D1&gclid=Cj0KCQjwvpy5BhDTARIsAHSilylsc21boDaKSiW0-3Z8lan7RzUq1XqBJxyUyCxNoTw84v0nEl9JZ3oaAr02EALw_wcB"
+                    link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
                 },
                 {
                     title: "Start Regular Investments",
                     benefit: "Dollar-cost average into low-risk investments!",
                     time: "30-45 mins",
-                    link: "https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/investing-your-cpf-savings"
+                    link: "https://www.cpf.gov.sg/member/investments/regular-savings"
+                }
+            ]
+        },
+        education: {
+            quickWin: {
+                title: "Start Monthly CPF Top-ups of $100",
+                benefit: "Get $1,200 tax relief annually while building your nest egg!",
+                link: "https://www.cpf.gov.sg/member/account-services/make-voluntary-contributions"
+            },
+            additional: [
+                {
+                    title: "Set up GIRO for Regular Top-ups",
+                    benefit: "Automate your savings journey effortlessly!",
+                    time: "5 mins or less",
+                    link: "https://www.cpf.gov.sg/member/account-services/giro-arrangements"
+                },
+                {
+                    title: "Top up MediSave Account",
+                    benefit: "Secure healthcare needs while enjoying tax benefits!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/healthcare/medisave-top-up"
+                },
+                {
+                    title: "Explore Education Endowment Scheme",
+                    benefit: "Plan ahead for education expenses with guaranteed returns!",
+                    time: "30-45 mins",
+                    link: "https://www.cpf.gov.sg/member/schemes"
                 }
             ]
         }
     },
-    // Add more age groups and their recommendations...
+
+    // Mid-Career Adults (31-45)
+    midCareer: {
+        home: {
+            quickWin: {
+                title: "Refinance HDB Loan to Bank Loan",
+                benefit: "Potential savings of $200/month in loan payments plus 2.5% interest on your OA!",
+                link: "https://www.cpf.gov.sg/member/home-ownership"
+            },
+            additional: [
+                {
+                    title: "Make Voluntary Housing Refund",
+                    benefit: "Boost your retirement savings while maintaining property ownership!",
+                    time: "5 mins or less",
+                    link: "https://www.cpf.gov.sg/member/home-ownership/refund-housing-withdrawal"
+                },
+                {
+                    title: "Top up MediSave to Basic Healthcare Sum",
+                    benefit: "Maximize healthcare coverage and get tax relief up to $8,000!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/healthcare/medisave-top-up"
+                },
+                {
+                    title: "Start RSTU to Spouse's SA",
+                    benefit: "Double your tax relief up to $14,000 while helping spouse build retirement funds!",
+                    time: "30-45 mins",
+                    link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
+                }
+            ]
+        },
+        retirement: {
+            quickWin: {
+                title: "Top up MediSave Account to Basic Healthcare Sum",
+                benefit: "Maximize tax relief ($8,000 cap) while ensuring healthcare needs are covered!",
+                link: "https://www.cpf.gov.sg/member/healthcare/medisave-top-up"
+            },
+            additional: [
+                {
+                    title: "Split Voluntary Contributions",
+                    benefit: "Optimize between 4% interest and maximum tax relief with 70% SA, 30% MA split!",
+                    time: "5 mins or less",
+                    link: "https://www.cpf.gov.sg/member/account-services/make-voluntary-contributions"
+                },
+                {
+                    title: "Set up Regular SA Top-ups",
+                    benefit: "Earn higher interest while building retirement savings!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/account-services/giro-arrangements"
+                },
+                {
+                    title: "Review CPF Investments",
+                    benefit: "Optimize your portfolio for long-term growth!",
+                    time: "30-45 mins",
+                    link: "https://www.cpf.gov.sg/member/investments/cpfis"
+                }
+            ]
+        },
+        education: {
+            quickWin: {
+                title: "Make RSTU Contributions to Your SA",
+                benefit: "Get immediate tax relief while securing your retirement!",
+                link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
+            },
+            additional: [
+                {
+                    title: "Set up Education Scheme",
+                    benefit: "Secure your children's education with guaranteed returns!",
+                    time: "5 mins or less",
+                    link: "https://www.cpf.gov.sg/member/schemes"
+                },
+                {
+                    title: "Top up MediSave Account",
+                    benefit: "Balance healthcare and education needs with tax benefits!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/healthcare/medisave-top-up"
+                },
+                {
+                    title: "Start Regular Savings Plan",
+                    benefit: "Build education fund through disciplined investing!",
+                    time: "30-45 mins",
+                    link: "https://www.cpf.gov.sg/member/investments/regular-savings"
+                }
+            ]
+        }
+    },
+
+    // Mature Adults (46-55)
+    mature: {
+        retirement: {
+            quickWin: {
+                title: "Top up to Enhanced Retirement Sum",
+                benefit: "Get up to $2,350 monthly CPF LIFE payouts for life!",
+                link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
+            },
+            additional: [
+                {
+                    title: "Split Voluntary Contribution (70% SA, 30% MA)",
+                    benefit: "Optimize between 4% interest and maximum tax relief!",
+                    time: "5 mins or less",
+                    link: "https://www.cpf.gov.sg/member/account-services/make-voluntary-contributions"
+                },
+                {
+                    title: "Nominate CPF Beneficiaries",
+                    benefit: "Ensure smooth transfer of your CPF savings to loved ones!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/estate-planning/cpf-nomination-scheme"
+                },
+                {
+                    title: "Review CPF LIFE Plans",
+                    benefit: "Choose the best plan for your retirement needs!",
+                    time: "30-45 mins",
+                    link: "https://www.cpf.gov.sg/member/retirement-income/cpf-life"
+                }
+            ]
+        },
+        education: {
+            quickWin: {
+                title: "Make RSTU to Both MA and SA",
+                benefit: "Maximize tax benefits while securing retirement and healthcare needs!",
+                link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
+            },
+            additional: [
+                {
+                    title: "Set up Monthly SA Top-ups",
+                    benefit: "Build retirement funds systematically!",
+                    time: "5 mins or less",
+                    link: "https://www.cpf.gov.sg/member/account-services/giro-arrangements"
+                },
+                {
+                    title: "Review Investment Portfolio",
+                    benefit: "Ensure your investments align with retirement goals!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/investments/cpfis"
+                },
+                {
+                    title: "Plan CPF LIFE Payouts",
+                    benefit: "Optimize your retirement income stream!",
+                    time: "30-45 mins",
+                    link: "https://www.cpf.gov.sg/member/retirement-income/cpf-life"
+                }
+            ]
+        }
+    },
+
+    // Pre-Retirees/Retirees (60+)
+    senior: {
+        retirement: {
+            quickWin: {
+                title: "Join CPF LIFE Standard Plan",
+                benefit: "Secure lifetime monthly payouts from age 65!",
+                link: "https://www.cpf.gov.sg/member/retirement-income/cpf-life"
+            },
+            additional: [
+                {
+                    title: "Set Aside 3-Month Emergency Fund in OA",
+                    benefit: "Balance between accessible savings and retirement needs!",
+                    time: "5 mins or less",
+                    link: "https://www.cpf.gov.sg/member/account-services"
+                },
+                {
+                    title: "Defer CPF LIFE Payouts",
+                    benefit: "Get up to 7% more in monthly payouts for each year of deferment!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/retirement-income/cpf-life"
+                },
+                {
+                    title: "Review Estate Planning",
+                    benefit: "Ensure your CPF savings are distributed according to your wishes!",
+                    time: "30-45 mins",
+                    link: "https://www.cpf.gov.sg/member/estate-planning"
+                }
+            ]
+        }
+    }
 };
 
 // Form submission handling
@@ -81,7 +281,9 @@ function generateRecommendations(profile) {
     // Determine age category
     let ageCategory;
     if (profile.age.startsWith('2')) ageCategory = 'young';
-    // Add more age categories as needed...
+    else if (profile.age.match(/3[1-9]|4[0-5]/)) ageCategory = 'midCareer';
+    else if (profile.age.match(/4[6-9]|5[0-5]/)) ageCategory = 'mature';
+    else ageCategory = 'senior';
 
     // Get primary goal (first selected goal)
     const primaryGoal = profile.goals[0];
@@ -98,6 +300,9 @@ function generateRecommendations(profile) {
     // Show hidden sections
     document.getElementById('quick-wins').classList.remove('hidden');
     document.getElementById('maximize-cpf').classList.remove('hidden');
+
+    // Scroll to recommendations
+    scrollToRecommendations();
 }
 
 function displayQuickWin(quickWin) {
