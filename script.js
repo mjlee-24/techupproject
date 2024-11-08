@@ -5,7 +5,7 @@ const recommendations = {
         home: {
             quickWin: {
                 title: "Make Voluntary Contributions to your Ordinary Account",
-                benefit: "Enjoy tax relief for up to $16,000 per year – up to $8,000 each when you make cash top-ups for (i) yourself and (ii) your loved ones!",
+                benefit: "Increase your home loan eligibility by up to 4x your contribution!",
                 link: "https://www.cpf.gov.sg/member/account-services/make-voluntary-contributions"
             },
             additional: [
