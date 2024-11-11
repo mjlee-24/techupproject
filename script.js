@@ -260,6 +260,31 @@ const recommendations = {
     }
 };
 
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    // Toggle mobile menu
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.navbar')) {
+            navLinks.classList.remove('active');
+        }
+    });
+
+    // Highlight current page in navigation
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+        }
+    });
+});
+
 function formatPossessive(name) {
     if (name.toLowerCase().endsWith('s')) {
         return `${name}' Quick Win`;  // For names ending in 's'
@@ -350,3 +375,4 @@ function scrollToRecommendations() {
         behavior: 'smooth' 
     });
 }
+
