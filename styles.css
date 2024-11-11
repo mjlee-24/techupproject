@@ -50,7 +50,7 @@ h1 {
 .card {
     background-color: var(--card-background);
     border-radius: 10px;
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: 2rem;
     box-shadow: 0 4px 6px var(--shadow-color);
     transition: transform 0.3s ease;
@@ -100,7 +100,7 @@ select[multiple] {
 .submit-btn, .action-btn {
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
@@ -117,7 +117,7 @@ select[multiple] {
 /* Recommendation Styles */
 .recommendation-card {
     background-color: #fff;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 8px;
     margin-bottom: 1rem;
     border-left: 4px solid var(--secondary-color);
@@ -126,7 +126,6 @@ select[multiple] {
 .benefit-text {
     font-size: 1.2rem;
     color: #2ecc71;
-    margin: 1rem 0;
 }
 
 .time-indicator {
