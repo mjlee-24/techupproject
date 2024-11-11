@@ -260,6 +260,14 @@ const recommendations = {
     }
 };
 
+function formatPossessive(name) {
+    if (name.toLowerCase().endsWith('s')) {
+        return `${name}' Quick Win`;  // For names ending in 's'
+    } else {
+        return `${name}'s Quick Win`; // For other names
+    }
+}
+
 // Form submission handling
 document.getElementById('profile-form').addEventListener('submit', function(e) {
     e.preventDefault();
@@ -272,6 +280,10 @@ document.getElementById('profile-form').addEventListener('submit', function(e) {
         income: document.getElementById('income').value,
         liquidity: document.getElementById('liquidity').value
     };
+
+    // Update the header with properly formatted possessive
+    const quickWinsHeader = document.getElementById('quick-wins-header');
+    quickWinsHeader.textContent = formatPossessive(profile.nickname);
 
     // Generate and display recommendations
     generateRecommendations(profile);
