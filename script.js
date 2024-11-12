@@ -232,31 +232,26 @@ const recommendations = {
     senior: {
         retirement: {
             quickWin: {
-                title: "Defer your CPF LIFE Standard Plan",
-                benefit: "For each year that you defer, your payouts will increase by up to 7%!",
-                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/plan-my-monthly-payouts"
+                title: "Make a CPF Nomination",
+                benefit: "Ensure that your loved ones receive your CPF savings in cash conveniently when you pass on.",
+                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/make-a-cpf-nomination"
             },
             additional: [
-                {
-                    title: "Set Aside 3-Month Emergency Fund in OA",
-                    benefit: "Balance between accessible savings and retirement needs!",
-                    time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/account-services"
-                },
                 {
                     title: "Defer CPF LIFE Payouts",
                     benefit: "Get up to 7% more in monthly payouts for each year of deferment!",
                     time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/retirement-income/cpf-life"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/plan-my-monthly-payouts"
                 },
                 {
-                    title: "Review Estate Planning",
-                    benefit: "Ensure your CPF savings are distributed according to your wishes!",
-                    time: "30-45 mins",
-                    link: "https://www.cpf.gov.sg/member/estate-planning"
+                    title: "Withdraw CPF savings for immediate needs",
+                    benefit: "With PayNow, you can receive your CPF savings almost instantaneously!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/withdraw-cpf-retirement-needs"
                 }
             ]
         }
+        
     }
 };
 
