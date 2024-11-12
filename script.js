@@ -25,7 +25,7 @@ const recommendations = {
                     title: "Start CPF Investment Scheme (CPFIS)",
                     benefit: "Potential to earn higher returns while maintaining security!",
                     time: "30-45 mins",
-                    link: "https://www.cpf.gov.sg/member/investments/cpfis"
+                    link: "https://auth.singpass.gov.sg/main"
                 }
             ]
         },
@@ -56,11 +56,11 @@ const recommendations = {
                 }
             ]
         },
-        education: {
+        healthcare: {
             quickWin: {
-                title: "Start Monthly CPF Top-ups of $100",
-                benefit: "Get $1,200 tax relief annually while building your nest egg!",
-                link: "https://www.cpf.gov.sg/member/account-services/make-voluntary-contributions"
+                title: "Top up MediSave Account",
+                benefit: "Secure healthcare needs while enjoying tax benefits!",
+                link: "hhttps://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/top-up-medisave-account-using-cpf-savings"
             },
             additional: [
                 {
@@ -70,10 +70,9 @@ const recommendations = {
                     link: "https://www.cpf.gov.sg/member/account-services/giro-arrangements"
                 },
                 {
-                    title: "Top up MediSave Account",
-                    benefit: "Secure healthcare needs while enjoying tax benefits!",
-                    time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/healthcare/medisave-top-up"
+                    title: "Start Monthly CPF Top-ups of $100",
+                    benefit: "Get $1,200 tax relief annually while building your nest egg!",
+                    link: "https://www.cpf.gov.sg/member/account-services/make-voluntary-contributions"
                 },
                 {
                     title: "Explore Education Endowment Scheme",
@@ -107,7 +106,7 @@ const recommendations = {
                     link: "https://www.cpf.gov.sg/member/healthcare/medisave-top-up"
                 },
                 {
-                    title: "Start RSTU to Spouse's SA",
+                    title: "Start Retirement Sum Topping-Up Scheme (RSTU) to Spouse's SA",
                     benefit: "Double your tax relief up to $14,000 while helping spouse build retirement funds!",
                     time: "30-45 mins",
                     link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
@@ -141,18 +140,18 @@ const recommendations = {
                 }
             ]
         },
-        education: {
+        healthcare: {
             quickWin: {
-                title: "Make RSTU Contributions to Your SA",
+                title: "Make Retirement Sum Topping-Up Scheme (RSTU) Contributions to Your SA",
                 benefit: "Get immediate tax relief while securing your retirement!",
                 link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
             },
             additional: [
                 {
-                    title: "Set up Education Scheme",
-                    benefit: "Secure your children's education with guaranteed returns!",
+                    title: "Set up GIRO for healthcare premiums",
+                    benefit: "Automate bank deductions to pay for MediShield Life and CareShield Life premiums!",
                     time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/schemes"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-healthcare-premiums"
                 },
                 {
                     title: "Top up MediSave Account",
@@ -170,13 +169,13 @@ const recommendations = {
         }
     },
 
-    // Mature Adults (46-55)
+    // Mature Adults (46-60)
     mature: {
         retirement: {
             quickWin: {
-                title: "Top up to Enhanced Retirement Sum",
-                benefit: "Get up to $2,350 monthly CPF LIFE payouts for life!",
-                link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
+                title: "Make Retirement Sum Topping-Up Scheme (RSTU) to Both MA and SA",
+                benefit: "Maximize tax benefits while securing retirement and healthcare needs!",
+                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
             },
             additional: [
                 {
@@ -199,11 +198,11 @@ const recommendations = {
                 }
             ]
         },
-        education: {
+        healthcare: {
             quickWin: {
-                title: "Make RSTU to Both MA and SA",
+                title: "Make Retirement Sum Topping-Up Scheme (RSTU) to Both MA and SA",
                 benefit: "Maximize tax benefits while securing retirement and healthcare needs!",
-                link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
+                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
             },
             additional: [
                 {
