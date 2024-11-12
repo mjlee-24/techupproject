@@ -6,20 +6,20 @@ const recommendations = {
             quickWin: {
                 title: "Make Voluntary Contributions to your Ordinary Account",
                 benefit: "Increase your home loan eligibility by up to 4x your contribution!",
-                link: "https://www.cpf.gov.sg/member/account-services/make-voluntary-contributions"
+                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/top-up-cpf-accounts"
             },
             additional: [
                 {
                     title: "Set up GIRO for Monthly Top-ups",
                     benefit: "Automate your savings with just one form submission!",
                     time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/account-services/giro-arrangements"
+                    link: "https://www.cpf.gov.sg/member/ahttps://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-cash-top-ups-for-retirementccount-services/giro-arrangements"
                 },
                 {
                     title: "Join the CPF LIFE Scheme Early",
                     benefit: "Lock in lower premiums and secure lifetime monthly payouts!",
                     time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/retirement-income/cpf-life"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/plan-my-monthly-payouts"
                 },
                 {
                     title: "Start CPF Investment Scheme (CPFIS)",
@@ -46,7 +46,7 @@ const recommendations = {
                     title: "Make Retirement Sum Topping-Up",
                     benefit: "Get tax relief while building retirement funds!",
                     time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
                 },
                 {
                     title: "Start Regular Investments",
@@ -232,9 +232,9 @@ const recommendations = {
     senior: {
         retirement: {
             quickWin: {
-                title: "Join CPF LIFE Standard Plan",
-                benefit: "Secure lifetime monthly payouts from age 65!",
-                link: "https://www.cpf.gov.sg/member/retirement-income/cpf-life"
+                title: "Defer your CPF LIFE Standard Plan",
+                benefit: "For each year that you defer, your payouts will increase by up to 7%!",
+                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/plan-my-monthly-payouts"
             },
             additional: [
                 {
