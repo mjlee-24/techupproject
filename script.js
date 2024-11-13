@@ -4,36 +4,36 @@ const recommendations = {
     young: {
         home: {
             quickWin: {
-                title: "Make Voluntary Contributions to your Ordinary Account",
+                title: "Make Voluntary Contributions to your Ordinary Account (OA)",
                 benefit: "Increase your home loan eligibility by up to 4x your contribution!",
                 link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/top-up-cpf-accounts"
             },
             additional: [
                 {
-                    title: "Set up GIRO for Monthly Top-ups",
+                    title: "Set up GIRO for Monthly Top-ups (Part 1)",
                     benefit: "Automate your savings with just one form submission!",
                     time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/ahttps://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-cash-top-ups-for-retirementccount-services/giro-arrangements"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-cash-top-ups-for-retirementccount-services/giro-arrangements"
                 },
                 {
-                    title: "Join the CPF LIFE Scheme Early",
-                    benefit: "Lock in lower premiums and secure lifetime monthly payouts!",
+                    title: "Arrange for Recurring Top-Ups (Part 2)",
+                    benefit: "Enjoy the convenience of automated top-ups to your CPF accounts!",
                     time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/plan-my-monthly-payouts"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/manage-recurring-cash-top-ups-for-retirement"
                 },
                 {
                     title: "Start CPF Investment Scheme (CPFIS)",
                     benefit: "Potential to earn higher returns while maintaining security!",
                     time: "30-45 mins",
-                    link: "https://auth.singpass.gov.sg/main"
+                    link: "https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/investing-your-cpf-savings"
                 }
             ]
         },
         retirement: {
             quickWin: {
-                title: "Transfer $20,000 from OA to SA",
+                title: "Transfer $20,000 from Ordinary Account (OA) to Special Account (SA)",
                 benefit: "Earn 1.5% more interest annually - that's $300 extra per year, compounded!",
-                link: "https://www.cpf.gov.sg/member/account-services/transfer-between-accounts"
+                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
             },
             additional: [
                 {
@@ -43,42 +43,37 @@ const recommendations = {
                     link: "https://www.cpf.gov.sg/member/account-services/giro-arrangements"
                 },
                 {
-                    title: "Make Retirement Sum Topping-Up",
-                    benefit: "Get tax relief while building retirement funds!",
+                    title: "Start Retirement Sum Topping-Up Scheme (RSTU)",
+                    benefit: "Get up to $16,000 tax relief while building retirement funds for yourself & loved ones!",
                     time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/top-up-cpf-accounts"
                 },
                 {
-                    title: "Start Regular Investments",
-                    benefit: "Dollar-cost average into low-risk investments!",
+                    title: "Start CPF Investment Scheme (CPFIS)",
+                    benefit: "Potential to earn higher returns while maintaining security!",
                     time: "30-45 mins",
-                    link: "https://www.cpf.gov.sg/member/investments/regular-savings"
+                    link: "https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/investing-your-cpf-savings"
                 }
             ]
         },
         healthcare: {
             quickWin: {
-                title: "Top up MediSave Account",
-                benefit: "Secure healthcare needs while enjoying tax benefits!",
+                title: "Top up MediSave Account (MA)",
+                benefit: "Earn 4% on your healthcare fund while enjoying tax benefits!",
                 link: "hhttps://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/top-up-medisave-account-using-cpf-savings"
             },
             additional: [
                 {
-                    title: "Set up GIRO for Regular Top-ups",
-                    benefit: "Automate your savings journey effortlessly!",
+                    title: "Set up GIRO for healthcare premiums",
+                    benefit: "Automate bank deductions to pay for MediShield Life and CareShield Life premiums!",
                     time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/account-services/giro-arrangements"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-healthcare-premiums"
                 },
                 {
-                    title: "Start Monthly CPF Top-ups of $100",
-                    benefit: "Get $1,200 tax relief annually while building your nest egg!",
-                    link: "https://www.cpf.gov.sg/member/account-services/make-voluntary-contributions"
-                },
-                {
-                    title: "Explore Education Endowment Scheme",
-                    benefit: "Plan ahead for education expenses with guaranteed returns!",
+                    title: "Start CPF Investment Scheme (CPFIS)",
+                    benefit: "Potential to earn higher returns while maintaining security!",
                     time: "30-45 mins",
-                    link: "https://www.cpf.gov.sg/member/schemes"
+                    link: "https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/investing-your-cpf-savings"
                 }
             ]
         }
@@ -206,10 +201,38 @@ const recommendations = {
             },
             additional: [
                 {
-                    title: "Set up Monthly SA Top-ups",
-                    benefit: "Build retirement funds systematically!",
+                    title: "Set up GIRO for healthcare premiums",
+                    benefit: "Automate bank deductions to pay for MediShield Life and CareShield Life premiums!",
                     time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/account-services/giro-arrangements"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-healthcare-premiums"
+                },
+                {
+                    title: "Review Investment Portfolio",
+                    benefit: "Ensure your investments align with retirement goals!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/investments/cpfis"
+                },
+                {
+                    title: "Plan CPF LIFE Payouts",
+                    benefit: "Optimize your retirement income stream!",
+                    time: "30-45 mins",
+                    link: "https://www.cpf.gov.sg/member/retirement-income/cpf-life"
+                }
+            ]
+        },
+
+        home: {
+            quickWin: {
+                title: "Make Retirement Sum Topping-Up Scheme (RSTU) to Both MA and SA",
+                benefit: "Maximize tax benefits while securing retirement and healthcare needs!",
+                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
+            },
+            additional: [
+                {
+                    title: "Set up GIRO for healthcare premiums",
+                    benefit: "Automate bank deductions to pay for MediShield Life and CareShield Life premiums!",
+                    time: "5 mins or less",
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-healthcare-premiums"
                 },
                 {
                     title: "Review Investment Portfolio",
@@ -249,8 +272,51 @@ const recommendations = {
                     link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/withdraw-cpf-retirement-needs"
                 }
             ]
-        }
+        },
         
+        home: {
+            quickWin: {
+                title: "Make a CPF Nomination",
+                benefit: "Ensure that your loved ones receive your CPF savings in cash conveniently when you pass on.",
+                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/make-a-cpf-nomination"
+            },
+            additional: [
+                {
+                    title: "Defer CPF LIFE Payouts",
+                    benefit: "Get up to 7% more in monthly payouts for each year of deferment!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/plan-my-monthly-payouts"
+                },
+                {
+                    title: "Withdraw CPF savings for immediate needs",
+                    benefit: "With PayNow, you can receive your CPF savings almost instantaneously!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/withdraw-cpf-retirement-needs"
+                }
+            ]
+        },
+
+        healthcare: {
+            quickWin: {
+                title: "Make a CPF Nomination",
+                benefit: "Ensure that your loved ones receive your CPF savings in cash conveniently when you pass on.",
+                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/make-a-cpf-nomination"
+            },
+            additional: [
+                {
+                    title: "Defer CPF LIFE Payouts",
+                    benefit: "Get up to 7% more in monthly payouts for each year of deferment!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/plan-my-monthly-payouts"
+                },
+                {
+                    title: "Withdraw CPF savings for immediate needs",
+                    benefit: "With PayNow, you can receive your CPF savings almost instantaneously!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/withdraw-cpf-retirement-needs"
+                }
+            ]
+        }
     }
 };
 
