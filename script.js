@@ -5,7 +5,7 @@ const recommendations = {
         home: {
             quickWin: {
                 title: "Make Voluntary Contributions to your Ordinary Account (OA)",
-                benefit: "Increase your home loan eligibility by up to 4x your contribution!",
+                benefit: "Earn higher interest while setting aside funds for mortgage payment!",
                 link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/top-up-cpf-accounts"
             },
             additional: [
@@ -18,7 +18,7 @@ const recommendations = {
                 {
                     title: "Arrange for Recurring Top-Ups (Part 2)",
                     benefit: "Enjoy the convenience of automated top-ups to your CPF accounts!",
-                    time: "15-20 mins",
+                    time: "5 mins or less",
                     link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/manage-recurring-cash-top-ups-for-retirement"
                 },
                 {
@@ -32,7 +32,7 @@ const recommendations = {
         retirement: {
             quickWin: {
                 title: "Transfer $20,000 from Ordinary Account (OA) to Special Account (SA)",
-                benefit: "Earn 1.5% more interest annually - that's $300 extra per year, compounded!",
+                benefit: "Earn ~1.5-2% more interest annually - that's $300-400 extra per year, compounded!",
                 link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
             },
             additional: [
@@ -59,12 +59,12 @@ const recommendations = {
         healthcare: {
             quickWin: {
                 title: "Top up MediSave Account (MA)",
-                benefit: "Earn 4% on your healthcare fund while enjoying tax benefits!",
+                benefit: "Earn 4% on your savings for healthcare while enjoying tax benefits!",
                 link: "hhttps://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/top-up-medisave-account-using-cpf-savings"
             },
             additional: [
                 {
-                    title: "Set up GIRO for healthcare premiums",
+                    title: "Set up GIRO for Healthcare Premiums",
                     benefit: "Automate bank deductions to pay for MediShield Life and CareShield Life premiums!",
                     time: "5 mins or less",
                     link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-healthcare-premiums"
@@ -83,63 +83,63 @@ const recommendations = {
     midCareer: {
         home: {
             quickWin: {
-                title: "Refinance HDB Loan to Bank Loan",
-                benefit: "Potential savings of $200/month in loan payments plus 2.5% interest on your OA!",
-                link: "https://www.cpf.gov.sg/member/home-ownership"
+                title: "Make Voluntary Contributions to your Ordinary Account (OA)",
+                benefit: "Earn higher interest while setting aside funds for mortgage payment!",
+                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/top-up-cpf-accounts"
             },
             additional: [
                 {
+                    title: "Start Retirement Sum Topping-Up Scheme (RSTU) to Spouse's SA",
+                    benefit: "Double your tax relief up to $14,000 while helping spouse build retirement funds!",
+                    time: "5 mins",
+                    link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
+                },
+                {
                     title: "Make Voluntary Housing Refund",
                     benefit: "Boost your retirement savings while maintaining property ownership!",
-                    time: "5 mins or less",
+                    time: "15-20 mins",
                     link: "https://www.cpf.gov.sg/member/home-ownership/refund-housing-withdrawal"
                 },
                 {
-                    title: "Top up MediSave to Basic Healthcare Sum",
-                    benefit: "Maximize healthcare coverage and get tax relief up to $8,000!",
-                    time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/healthcare/medisave-top-up"
-                },
-                {
-                    title: "Start Retirement Sum Topping-Up Scheme (RSTU) to Spouse's SA",
-                    benefit: "Double your tax relief up to $14,000 while helping spouse build retirement funds!",
+                    title: "Review CPF Investments",
+                    benefit: "Optimize your portfolio for long-term growth!",
                     time: "30-45 mins",
-                    link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
+                    link: "https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/investing-your-cpf-savings"
                 }
             ]
         },
         retirement: {
             quickWin: {
-                title: "Top up MediSave Account to Basic Healthcare Sum",
-                benefit: "Maximize tax relief ($8,000 cap) while ensuring healthcare needs are covered!",
-                link: "https://www.cpf.gov.sg/member/healthcare/medisave-top-up"
+                title: "Make Retirement Sum Topping-Up Scheme (RSTU) Contributions to Your SA",
+                benefit: "Get immediate tax relief while securing your retirement!",
+                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/top-up-cpf-accounts"
             },
             additional: [
                 {
-                    title: "Split Voluntary Contributions",
-                    benefit: "Optimize between 4% interest and maximum tax relief with 70% SA, 30% MA split!",
+                    title: "Transfer up to the Full Retirement Sum (FRS) from Ordinary Account (OA) to Special Account (SA)",
+                    benefit: "Earn ~1.5-2% more interest annually - for $20,000, that's $300-400 extra per year, compounded!",
                     time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/account-services/make-voluntary-contributions"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
                 },
                 {
                     title: "Set up Regular SA Top-ups",
                     benefit: "Earn higher interest while building retirement savings!",
-                    time: "15-20 mins",
+                    time: "5 mins or less",
                     link: "https://www.cpf.gov.sg/member/account-services/giro-arrangements"
                 },
                 {
                     title: "Review CPF Investments",
                     benefit: "Optimize your portfolio for long-term growth!",
                     time: "30-45 mins",
-                    link: "https://www.cpf.gov.sg/member/investments/cpfis"
+                    link: "https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/investing-your-cpf-savings"
                 }
             ]
         },
         healthcare: {
             quickWin: {
-                title: "Make Retirement Sum Topping-Up Scheme (RSTU) Contributions to Your SA",
-                benefit: "Get immediate tax relief while securing your retirement!",
-                link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
+                title: "Top up MediSave Account to Basic Healthcare Sum",
+                benefit: "Maximize tax relief ($8,000 cap) while ensuring healthcare needs are covered!",
+                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/top-up-medisave-account"
             },
             additional: [
                 {
@@ -149,53 +149,47 @@ const recommendations = {
                     link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-healthcare-premiums"
                 },
                 {
-                    title: "Top up MediSave Account",
-                    benefit: "Balance healthcare and education needs with tax benefits!",
-                    time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/healthcare/medisave-top-up"
-                },
-                {
-                    title: "Start Regular Savings Plan",
-                    benefit: "Build education fund through disciplined investing!",
+                    title: "Review CPF Investments",
+                    benefit: "Optimize your portfolio for long-term growth!",
                     time: "30-45 mins",
-                    link: "https://www.cpf.gov.sg/member/investments/regular-savings"
+                    link: "https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/investing-your-cpf-savings"
                 }
             ]
         }
     },
 
-    // Mature Adults (46-60)
+    // Mature Adults (46-55)
     mature: {
         retirement: {
             quickWin: {
-                title: "Make Retirement Sum Topping-Up Scheme (RSTU) to Both MA and SA",
+                title: "Make Retirement Sum Topping-Up Scheme (RSTU) to Both MediSave Account (MA) and Special Account (SA)",
                 benefit: "Maximize tax benefits while securing retirement and healthcare needs!",
                 link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
             },
             additional: [
                 {
-                    title: "Split Voluntary Contribution (70% SA, 30% MA)",
-                    benefit: "Optimize between 4% interest and maximum tax relief!",
+                    title: "Transfer up to the Full Retirement Sum (FRS) from Ordinary Account (OA) to Special Account (SA)",
+                    benefit: "Earn ~1.5-2% more interest annually - for $20,000, that's $300-400 extra per year, compounded!",
                     time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/account-services/make-voluntary-contributions"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
                 },
                 {
                     title: "Nominate CPF Beneficiaries",
                     benefit: "Ensure smooth transfer of your CPF savings to loved ones!",
                     time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/estate-planning/cpf-nomination-scheme"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/make-a-cpf-nomination"
                 },
                 {
-                    title: "Review CPF LIFE Plans",
-                    benefit: "Choose the best plan for your retirement needs!",
+                    title: "Review Investment Portfolio",
+                    benefit: "Ensure your investments align with saving goals!",
                     time: "30-45 mins",
-                    link: "https://www.cpf.gov.sg/member/retirement-income/cpf-life"
+                    link: "https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/investing-your-cpf-savings/cpf-investment-scheme-options"
                 }
             ]
         },
         healthcare: {
             quickWin: {
-                title: "Make Retirement Sum Topping-Up Scheme (RSTU) to Both MA and SA",
+                title: "Make Retirement Sum Topping-Up Scheme (RSTU) to Both MediSave Account (MA) and Special Account (SA)",
                 benefit: "Maximize tax benefits while securing retirement and healthcare needs!",
                 link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
             },
@@ -207,60 +201,65 @@ const recommendations = {
                     link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-healthcare-premiums"
                 },
                 {
-                    title: "Review Investment Portfolio",
-                    benefit: "Ensure your investments align with retirement goals!",
+                    title: "Nominate CPF Beneficiaries",
+                    benefit: "Ensure smooth transfer of your CPF savings to loved ones!",
                     time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/investments/cpfis"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/make-a-cpf-nomination"
                 },
                 {
-                    title: "Plan CPF LIFE Payouts",
-                    benefit: "Optimize your retirement income stream!",
+                    title: "Review Investment Portfolio",
+                    benefit: "Ensure your investments align with saving goals!",
                     time: "30-45 mins",
-                    link: "https://www.cpf.gov.sg/member/retirement-income/cpf-life"
+                    link: "https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/investing-your-cpf-savings/cpf-investment-scheme-options"
                 }
             ]
         },
-
         home: {
             quickWin: {
-                title: "Make Retirement Sum Topping-Up Scheme (RSTU) to Both MA and SA",
+                title: "Make Retirement Sum Topping-Up Scheme (RSTU) to Both MediSave Account (MA) and Special Account (SA)",
                 benefit: "Maximize tax benefits while securing retirement and healthcare needs!",
                 link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
             },
             additional: [
                 {
-                    title: "Set up GIRO for healthcare premiums",
-                    benefit: "Automate bank deductions to pay for MediShield Life and CareShield Life premiums!",
+                    title: "Retirement Sum Topping-Up Scheme (RSTU) to Spouse's SA",
+                    benefit: "Double your tax relief up to $14,000 while helping spouse build retirement funds!",
                     time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-healthcare-premiums"
+                    link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
+                },
+                {
+                    title: "Make Voluntary Housing Refund",
+                    benefit: "Boost your retirement savings while maintaining property ownership!",
+                    time: "15-20 mins",
+                    link: "https://www.cpf.gov.sg/member/home-ownership/refund-housing-withdrawal"
                 },
                 {
                     title: "Review Investment Portfolio",
-                    benefit: "Ensure your investments align with retirement goals!",
-                    time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/investments/cpfis"
-                },
-                {
-                    title: "Plan CPF LIFE Payouts",
-                    benefit: "Optimize your retirement income stream!",
+                    benefit: "Ensure your investments align with saving goals!",
                     time: "30-45 mins",
-                    link: "https://www.cpf.gov.sg/member/retirement-income/cpf-life"
+                    link: "https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/investing-your-cpf-savings/cpf-investment-scheme-options"
                 }
             ]
         }
     },
 
-    // Pre-Retirees/Retirees (60+)
+    // Pre-Retirees/Retirees (55+)
     senior: {
         retirement: {
             quickWin: {
-                title: "Make a CPF Nomination",
-                benefit: "Ensure that your loved ones receive your CPF savings in cash conveniently when you pass on.",
+                title: "Nominate CPF Beneficiaries",
+                benefit: "Ensure smooth transfer of your CPF savings to loved ones!",
                 link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/make-a-cpf-nomination"
             },
             additional: [
                 {
-                    title: "Defer CPF LIFE Payouts",
+                    title: "Top-up Your Retirement Account (RA)",
+                    benefit: "Earn interest rates of up to 6% per annum on retirement savings!",
+                    time: "5-10 mins",
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
+                },
+                {
+                    title: "Defer CPF LIFE Payouts (if almost 65)",
                     benefit: "Get up to 7% more in monthly payouts for each year of deferment!",
                     time: "15-20 mins",
                     link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/plan-my-monthly-payouts"
@@ -276,13 +275,19 @@ const recommendations = {
         
         home: {
             quickWin: {
-                title: "Make a CPF Nomination",
-                benefit: "Ensure that your loved ones receive your CPF savings in cash conveniently when you pass on.",
+                title: "Nominate CPF Beneficiaries",
+                benefit: "Ensure smooth transfer of your CPF savings to loved ones!",
                 link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/make-a-cpf-nomination"
             },
             additional: [
                 {
-                    title: "Defer CPF LIFE Payouts",
+                    title: "Top-up Your Retirement Account (RA)",
+                    benefit: "Earn interest rates of up to 6% per annum on retirement savings!",
+                    time: "5-10 mins",
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
+                },
+                {
+                    title: "Defer CPF LIFE Payouts (if almost 65)",
                     benefit: "Get up to 7% more in monthly payouts for each year of deferment!",
                     time: "15-20 mins",
                     link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/plan-my-monthly-payouts"
@@ -298,13 +303,19 @@ const recommendations = {
 
         healthcare: {
             quickWin: {
-                title: "Make a CPF Nomination",
-                benefit: "Ensure that your loved ones receive your CPF savings in cash conveniently when you pass on.",
+                title: "Nominate CPF Beneficiaries",
+                benefit: "Ensure smooth transfer of your CPF savings to loved ones!",
                 link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/make-a-cpf-nomination"
             },
             additional: [
                 {
-                    title: "Defer CPF LIFE Payouts",
+                    title: "Top-up Your MediSave Account (MA)",
+                    benefit: "Earn interest rates of up to 6% per annum on retirement savings!",
+                    time: "5-10 mins",
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
+                },
+                {
+                    title: "Defer CPF LIFE Payouts (if almost 65)",
                     benefit: "Get up to 7% more in monthly payouts for each year of deferment!",
                     time: "15-20 mins",
                     link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/plan-my-monthly-payouts"
