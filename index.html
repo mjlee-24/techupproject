@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,22 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7C0PC5WPP0"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-7C0PC5WPP0');
+        gtag('config', 'G-7C0PC5WPP0');
     </script>
 </head>
+
 <body>
-    
+
     <nav class="navbar">
         <div class="nav-brand">CPF Optimiser for You!</div>
         <ul class="nav-links">
@@ -89,7 +93,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="liquidity">Liquidity Preference (% of income)</label>
+                    <label for="liquidity">Liquidity Preference (% of income)
+                        <div class="tooltip">
+                            ⓘ
+                            <span class="tooltiptext">The higher your need for instant cash access, the higher (%) your
+                                liquidity preference.</span>
+                        </div>
+                    </label>
                     <select id="liquidity" required>
                         <option value="">Select liquidity preference</option>
                         <option value="very-low">Very Low (0-20%)</option>
@@ -106,7 +116,13 @@
 
         <!-- Section 2: Quick Wins (Hidden initially) -->
         <section id="quick-wins" class="card hidden">
-            <h2 id="quick-wins-header">Your Quick Win</h2>
+            <h2>
+                <div id="quick-wins-header">Your Quick Win</div>
+                <div class="tooltip">
+                    ⓘ
+                    <span class="tooltiptext">A low-effort action that you can carry out right now!</span>
+                </div>
+            </h2>
             <div class="recommendation-card">
                 <h3 id="quick-win-title"></h3>
                 <p id="quick-win-benefit" class="benefit-text"></p>
@@ -118,7 +134,13 @@
 
         <!-- Section 3: Maximise CPF Further (Hidden initially) -->
         <section id="maximize-cpf" class="card hidden">
-            <h2>Maximise CPF Further!</h2>
+            <h2>Maximise CPF Further!
+                <div class="tooltip">
+                    ⓘ
+                    <span class="tooltiptext">If you have a bit more time, go on to take further action to maximise
+                        CPF!</span>
+                </div>
+            </h2>
             <div id="additional-recommendations">
                 <!-- Recommendation cards will be inserted here by JavaScript -->
             </div>
@@ -127,11 +149,13 @@
         <section id="find-out-more">
             <h2>Find out more!</h2>
             <div class="recommendation-card">
-                <p>Click <span><a href="cpf-products.html" class="active">here</a></span> to see the full list of products in my list, and a more detailed description of each product!</p>
+                <p>Click <span><a href="cpf-products.html" class="active">here</a></span> to see the full list of
+                    products in my list, and a more detailed description of each product!</p>
             </div>
         </section>
 
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

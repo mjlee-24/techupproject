@@ -25,7 +25,8 @@ const recommendations = {
                     title: "Start CPF Investment Scheme (CPFIS)",
                     benefit: "Potential to earn higher returns while maintaining security!",
                     time: "30-45 mins",
-                    link: "https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/investing-your-cpf-savings"
+                    link: "https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/investing-your-cpf-savings",
+                    readmore: 'https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/investing-your-cpf-savings/cpf-investment-scheme-options',
                 }
             ]
         },
@@ -364,34 +365,45 @@ function formatPossessive(name) {
     }
 }
 
-// Form submission handling
-document.getElementById('profile-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form values
-    const profile = {
-        nickname: document.getElementById('nickname').value,
-        age: document.getElementById('age').value,
-        goals: Array.from(document.getElementById('goals').selectedOptions).map(option => option.value),
-        income: document.getElementById('income').value,
-        liquidity: document.getElementById('liquidity').value
-    };
+const button = document.getElementById('profile-form');
 
-    // Update the header with properly formatted possessive
-    const quickWinsHeader = document.getElementById('quick-wins-header');
-    quickWinsHeader.textContent = formatPossessive(profile.nickname);
+if (button) {
+    // Form submission handling
+    button.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const profile = {
+            nickname: document.getElementById('nickname').value,
+            age: document.getElementById('age').value,
+            goals: Array.from(document.getElementById('goals').selectedOptions).map(option => option.value),
+            income: document.getElementById('income').value,
+            liquidity: document.getElementById('liquidity').value
+        };
 
-    // Generate and display recommendations
-    generateRecommendations(profile);
-});
+        // Update the header with properly formatted possessive
+        const quickWinsHeader = document.getElementById('quick-wins-header');
+        quickWinsHeader.textContent = formatPossessive(profile.nickname);
+
+        // Generate and display recommendations
+        generateRecommendations(profile);
+    });
+}
 
 function generateRecommendations(profile) {
     // Determine age category
+    const age =  parseInt(profile.age);
+
     let ageCategory;
-    if (profile.age.startsWith('2')) ageCategory = 'young';
-    else if (profile.age.match(/3[1-9]|4[0-5]/)) ageCategory = 'midCareer';
-    else if (profile.age.match(/4[6-9]|5[0-5]/)) ageCategory = 'mature';
-    else ageCategory = 'senior';
+    if (age > 55) {
+        ageCategory = 'senior'
+    } else if (age > 45) {
+        ageCategory = 'mature'
+    } else if (age > 30) {
+        ageCategory = 'midCareer'
+    } else {
+        ageCategory = 'young'
+    }
 
     // Get primary goal (first selected goal)
     const primaryGoal = profile.goals[0];
@@ -433,6 +445,7 @@ function displayAdditionalRecommendations(recommendations) {
             <p class="benefit-text">${rec.benefit}</p>
             <div class="action-container">
                 <a href="${rec.link}" target="_blank" class="action-btn">Take Action</a>
+                ${rec.readmore ? `<a href="${rec.readmore}" target="_blank" class="read-more-btn">Read More</a>` : ''}
             </div>
         `;
 
