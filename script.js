@@ -255,7 +255,7 @@ const recommendations = {
                     title: "Make Voluntary Housing Refund",
                     benefit: "Boost your retirement savings while maintaining property ownership!",
                     time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/make-a-voluntary-housing-refund"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/make-a-voluntary-housing-refund",
                     readmore: "https://www.cpf.gov.sg/member/growing-your-savings/saving-more-with-cpf/make-a-voluntary-housing-refund"
                 },
                 {
@@ -466,6 +466,8 @@ function displayQuickWin(quickWin) {
     document.getElementById('quick-win-title').textContent = quickWin.title;
     document.getElementById('quick-win-benefit').textContent = quickWin.benefit;
     document.getElementById('quick-win-link').href = quickWin.link;
+    document.getElementById('quick-win-readmore').href = quickWin.readmore;
+    document.getElementById('quick-win-readmore').hidden = !!quickWin.readmore;
 }
 
 function displayAdditionalRecommendations(recommendations) {
