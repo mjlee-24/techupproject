@@ -13,7 +13,7 @@ const recommendations = {
                     title: "Set up GIRO for Monthly Top-ups (Part 1)",
                     benefit: "Automate your savings with just one form submission!",
                     time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-cash-top-ups-for-retirementccount-services/giro-arrangements"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/set-up-giro-for-cash-top-ups-for-retirement"
                 },
                 {
                     title: "Arrange for Recurring Top-Ups (Part 2)",
@@ -40,7 +40,7 @@ const recommendations = {
                     title: "Set up Monthly SA Top-up",
                     benefit: "Earn 4% interest with minimal effort!",
                     time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/account-services/giro-arrangements"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/manage-recurring-cash-top-ups-for-retirement"
                 },
                 {
                     title: "Start Retirement Sum Topping-Up Scheme (RSTU)",
@@ -60,7 +60,7 @@ const recommendations = {
             quickWin: {
                 title: "Top up MediSave Account (MA)",
                 benefit: "Earn 4% on your savings for healthcare while enjoying tax benefits!",
-                link: "hhttps://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/top-up-medisave-account-using-cpf-savings"
+                link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/top-up-medisave-account-using-cpf-savings"
             },
             additional: [
                 {
@@ -92,13 +92,13 @@ const recommendations = {
                     title: "Start Retirement Sum Topping-Up Scheme (RSTU) to Spouse's SA",
                     benefit: "Double your tax relief up to $14,000 while helping spouse build retirement funds!",
                     time: "5 mins",
-                    link: "https://www.cpf.gov.sg/member/retirement-income/retirement-sum-topping-up"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/cash-top-ups-and-cpf-transfers-for-retirement"
                 },
                 {
                     title: "Make Voluntary Housing Refund",
                     benefit: "Boost your retirement savings while maintaining property ownership!",
                     time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/home-ownership/refund-housing-withdrawal"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/make-a-voluntary-housing-refund"
                 },
                 {
                     title: "Review CPF Investments",
@@ -125,7 +125,7 @@ const recommendations = {
                     title: "Set up Regular SA Top-ups",
                     benefit: "Earn higher interest while building retirement savings!",
                     time: "5 mins or less",
-                    link: "https://www.cpf.gov.sg/member/account-services/giro-arrangements"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/manage-recurring-cash-top-ups-for-retirement"
                 },
                 {
                     title: "Review CPF Investments",
@@ -231,7 +231,7 @@ const recommendations = {
                     title: "Make Voluntary Housing Refund",
                     benefit: "Boost your retirement savings while maintaining property ownership!",
                     time: "15-20 mins",
-                    link: "https://www.cpf.gov.sg/member/home-ownership/refund-housing-withdrawal"
+                    link: "https://www.cpf.gov.sg/member/tools-and-services/forms-e-applications/make-a-voluntary-housing-refund"
                 },
                 {
                     title: "Review Investment Portfolio",

@@ -190,7 +190,20 @@ select[multiple] {
     display: inline-block;
 }
 
-.submit-btn:hover, .action-btn:hover {
+.read-more-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.submit-btn:hover, .action-btn:hover, .read-more-btn:hover {
     background-color: #ff5252;
 }
 
