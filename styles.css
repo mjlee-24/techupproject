@@ -54,7 +54,7 @@ body {
 }
 
 .nav-links a.active {
-    background-color: #4ecdc4;
+    background-color: #3ab8b0;
 }
 
 /* Content Styles */
@@ -176,6 +176,11 @@ select[multiple] {
     min-height: 100px;
 }
 
+a {
+    color: #ff5252;
+    text-decoration: none; /* Removes the underline */
+}
+
 /* Button Styles */
 .submit-btn, .action-btn {
     background-color: var(--primary-color);
@@ -203,8 +208,14 @@ select[multiple] {
     display: inline-block;
 }
 
-.submit-btn:hover, .action-btn:hover, .read-more-btn:hover {
+.submit-btn:hover, .action-btn:hover{
     background-color: #ff5252;
+}
+
+.read-more-btn:hover{
+    background-color: #ffe0e0;
+    color: #ff5252;
+    border-color: #ff5252;
 }
 
 /* Recommendation Styles */
@@ -257,5 +268,10 @@ select[multiple] {
     .submit-btn, .action-btn {
         width: 100%;
         text-align: center;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
     }
 }
