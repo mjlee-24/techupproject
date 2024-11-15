@@ -265,6 +265,7 @@ a {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+        z-index: 1001; /* Ensure hamburger stays above menu */
     }
 
     .nav-links {
@@ -276,6 +277,8 @@ a {
         background-color: #333;
         flex-direction: column;
         padding: 1rem;
+        z-index: 1000; /* Ensure menu appears above content */
+        align-items: center; /* Center menu items */
     }
 
     .nav-links.active {

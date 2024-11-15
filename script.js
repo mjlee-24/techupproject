@@ -374,8 +374,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelector('.nav-links');
 
     // Toggle mobile menu
-    hamburger.addEventListener('click', function() {
+    hamburger.addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevent event from bubbling
         navLinks.classList.toggle('active');
+    });
+
+    // Make menu items clickable
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent event from bubbling
+            navLinks.classList.remove('active');
+        });
     });
 
     // Close mobile menu when clicking outside
