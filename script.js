@@ -492,6 +492,7 @@ function displayAdditionalRecommendations(recommendations) {
     });
 }
 
+
 // Add smooth scrolling when recommendations are generated
 function scrollToRecommendations() {
     document.getElementById('quick-wins').scrollIntoView({ 

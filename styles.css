@@ -79,28 +79,6 @@ body {
     transition: 0.3s;
 }
 
-/* Mobile Responsive Styles */
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background-color: #333;
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -110,11 +88,11 @@ body {
 /* Header Styles */
 header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
     font-weight: 700;
@@ -131,7 +109,7 @@ h1 {
     background-color: var(--card-background);
     border-radius: 10px;
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     box-shadow: 0 4px 6px var(--shadow-color);
     transition: transform 0.3s ease;
 }
@@ -143,13 +121,18 @@ h1 {
 h2 {
     display: flex;
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Form Styles */
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 label {
@@ -215,8 +198,6 @@ a {
 
 .read-more-btn:hover{
     background-color: #ffe0e0;
-    color: #ff5252;
-    border-color: #ff5252;
 }
 
 /* Recommendation Styles */
@@ -252,46 +233,6 @@ a {
     display: none;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 1rem;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    .card {
-        padding: 1.5rem;
-    }
-
-    .submit-btn, .action-btn, .read-more-btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .profile-pic {
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-    }
-
-    /* Ensure the image scales down if the screen is too small */
-    .profile-pic img {
-      max-width: 100%; /* Image will scale with the container */
-      height: auto; /* Maintain aspect ratio */
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
-    }
-
-    .tooltip .tooltiptext {
-      width: 80%; /* Adjust width for smaller screens */
-      font-size: 0.9rem; /* Smaller font size */
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
 /* Tooltip container */
 .tooltip {
     font-size: 16px;
@@ -319,3 +260,78 @@ a {
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .submit-btn, .action-btn, .read-more-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-pic {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    /* Ensure the image scales down if the screen is too small */
+    .profile-pic img {
+      max-width: 100%; /* Image will scale with the container */
+      height: auto; /* Maintain aspect ratio */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
+    }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+    
+      .tooltip .tooltiptext {
+        position: absolute;
+        width: 80%
+        font-size: 0.8rem;
+        right: auto;
+        transform: none;
+        
+        /* Position relative to parent */
+        left: 0;
+      }
+        /* If parent is too close to right edge, shift tooltip left */
+      .tooltip:has(+ *:last-child) .tooltiptext,
+      .tooltip:last-child .tooltiptext {
+        left: auto;
+        right: 0;
+          }
+  }
+
